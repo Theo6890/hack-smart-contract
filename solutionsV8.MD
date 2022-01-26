@@ -94,6 +94,7 @@ e.g.: buying 0.5 ETH then 3 ETH, then selling 1.25 fails
   - missing string for `require` error
   - avoid reentrancy attack: `coffer.slots[slot] = 0` update before transfer + reentrancy guard
 - `closeAccount(...)`
+  - in for loop missing: `coffer.slots[i] = 0;`, otherwisee supposed balance will be higher than real one
   - `call{value: amount}("")` + payable
   - might be better with a reentrancy guard
     <br><br>
