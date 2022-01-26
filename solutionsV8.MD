@@ -22,6 +22,10 @@
 <br><br>
 
 ## Exercise 2
+- `buy()` & `price()`: if `msg.sender` has bought over 10**18, `msg.value` should be `< 10^0` whereas solidity doesn't support decimals ()
+- fix: 
+  - limit mapping(address => uint256) to uint56 (can buy ~7*10^16 items)
+  - multiply numbers by 10**18 to always have a number >= 10^0
 - `address(0)` can't buy
 <br><br>
 
