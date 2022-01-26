@@ -63,7 +63,7 @@ function redeem() public payable {
   <br><br>
 
 ## Exercise 6
-
+- int not uint: so can negative (answer given by Merlin)
 - missing `require` on:
   - `msg.sender` has enough balance
   - sender & recipient not `address(0)`
