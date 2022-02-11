@@ -1,0 +1,6 @@
+10. abi.encode => can intervert word and same hash
+11. pull over push: ppl doivent claim au lieu du contract qui envoie
+12. nlock.timestamp to transfer more
+13. average += uint256 pour atteindre le max
+14. monitor pas état, fait appeler etat don 10.0001 fails
+15. clearRounds ça delete pas
